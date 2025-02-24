@@ -3,5 +3,9 @@ export { auth as middleware } from "@/lib/auth";
 
 export const config = {
   // ミドルウェアを適用するパス
-  matcher: ["/dashboard/:path*", "/"],
+  matcher: [
+    "/dashboard/:path*",
+    "/",
+    "/((?!api|_next/static|_next/image|favicon.ico).*)",
+  ],
 };

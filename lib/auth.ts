@@ -23,11 +23,6 @@ export const config: NextAuthConfig = {
   callbacks: {
     authorized({ request, auth }) {
       try {
-        const isAuth = !!auth;
-        const { pathname } = request.nextUrl;
-
-        // 認証が完了していない場合、ダッシュボードにアクセスできないようにする
-        // if (pathname === "/dashboard") return isAuth;
         // デフォルトでは認証が完了していなくても、認証が完了しているとみなされる
         return true;
       } catch (error) {
