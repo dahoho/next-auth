@@ -7,7 +7,7 @@ export default async function Dashboard() {
   // ユーザーのセッション情報を取得
   const session = await auth();
 
-  // セッションがない場合はログインページにりダイレクト
+  // セッションがない場合はログインページにリダイレクト
   if (!session) return redirect("/");
 
   return (
