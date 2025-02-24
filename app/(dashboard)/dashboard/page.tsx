@@ -8,7 +8,7 @@ export default async function Dashboard() {
   const session = await auth();
 
   // セッションがない場合はログインページにリダイレクト
-  if (!session) return redirect("/");
+  if (!session) return redirect("/login");
 
   return (
     <div className="p-10">

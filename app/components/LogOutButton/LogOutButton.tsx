@@ -9,7 +9,7 @@ export const LogOutButton = () => {
       variant="filled"
       size="sm"
       color="rgba(0, 0, 0, 1)"
-      onClick={() => signOut({ callbackUrl: `/` })}
+      onClick={() => signOut({ callbackUrl: `/login` })}
     >
       ログアウト
     </Button>
